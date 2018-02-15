@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>auth</title>
+    	<script src="js/cookies.js"></script>
+	</head>
+	<body>
+		<form>
+			<b>Login</b><br>
+			<input type='text' name='login'><br>
+			<b>Password</b><br>
+			<input type='text' name='password'><br>
+			<input type="button" value="Signin" onclick="var l = login.value;
+				var p = password.value;
+				console.log('Login: ' + l + ' Password: ' + p);
+				setCookie('token', l+'_'+p, 30*24*60*60*1000);
+    			window.location.href = './main.html';">
+		</form>
+	</body>
+</html>

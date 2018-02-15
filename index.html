@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>github_pages_firebase_experience</title>
+    	<script src="js/cookies.js"></script>
+	</head>
+	<body onload="var token = getCookie('token');
+	    if(token === null)
+	    {
+	        console.log('Token not exist!');
+	        window.location.href = './auth.html';
+	    }
+	    else
+	    {
+	        console.log('Token: ' + token);
+	        window.location.href = './main.html';
+	    }">
+	</body>
+</html>
